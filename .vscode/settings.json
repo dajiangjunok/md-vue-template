@@ -1,0 +1,56 @@
+{
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "jake.autoDetect": "off",
+  "search.followSymlinks": false,
+  "search.exclude": {
+    "**/.history": true,
+    "**/dist/**": true,
+    "yarn.lock": true,
+    "package-lock.json": true
+  },
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 1500,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.exclude": {
+    ".history": true
+  },
+  "files.watcherExclude": {
+    "dist": true,
+    "yarn.lock": true,
+    "package-lock.json": true
+  },
+  "editor.minimap.enabled": true,
+  "vetur.completion.autoImport": false,
+  "vetur.format.defaultFormatter.html": "prettier",
+  "cSpell.words": [
+    "EVENTBUS",
+    "cascader",
+    "errmsg",
+    "extname",
+    "medi",
+    "mediinfo",
+    "unshift"
+  ],
+  "cSpell.ignoreWords": [
+    "better-mock",
+    "medibmis",
+    "oidc",
+    "browserify",
+    "devtool",
+    "sortablejs",
+    "vuedraggable",
+    "vuejs"
+  ],
+  "cSpell.ignorePaths": [
+    ".history",
+    ".vscode",
+    "dist",
+    "package-lock.json",
+    "yarn.lock"
+  ]
+}

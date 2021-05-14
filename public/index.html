@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+
+    <title><%= VUE_APP_DEFAULT_SITE_TITLE %></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="<%= BASE_URL %>favicon.ico?v=<%= VUE_APP_BUILD_VERSION %>" rel="icon" />
+    <link
+      href="<%= BASE_URL %>static/css/reset.css?v=<%= VUE_APP_BUILD_VERSION %>"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <noscript>
+      <strong>请您启用浏览器的 JavaScript 功能，以保证我们能为您正常提供服务。</strong>
+    </noscript>
+
+    <div id="app">
+      <div id="loading" class="loading">
+        <style>
+          .loading {
+            width: 480px;
+            height: 384px;
+            margin: 0 auto;
+            padding-top: 20%;
+          }
+          .loading img {
+            display: block;
+            margin: 0 auto;
+          }
+        </style>
+        <img class="image" src="<%= BASE_URL %>static/images/loading.png" />
+      </div>
+
+      <div id="error" class="errmsg" style="display: none">
+        <style>
+          .errmsg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -20px;
+            width: 500px;
+            font-size: 18px;
+            transform: translate(-50%, -50%);
+          }
+
+          .errmsg__icon-area {
+            width: 100%;
+            text-align: center;
+          }
+
+          .errmsg__icon-area img {
+            width: 500px;
+            max-width: 100%;
+          }
+
+          .errmsg__operate {
+            margin-top: 20px;
+            text-align: center;
+          }
+
+          .errmsg__operate .logout-btn {
+            margin-left: 24px;
+          }
+        </style>
+        <div class="errmsg__icon-area">
+          <img src="<%= BASE_URL %>static/images/error.png" />
+        </div>
+        <div class="errmsg__message">刷新后尝试获取数据</div>
+        <div class="errmsg__operate">
+          <button class="md-button md-button--primary is-plain" onclick="location.reload()">
+            刷新
+          </button>
+          <!-- <button class="md-button md-button--primary logout-btn">退出</button> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

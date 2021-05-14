@@ -1,0 +1,47 @@
+.layout {
+  position: relative;
+  // z-index : 1;
+  height: 100%;
+}
+
+.layout-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding: 0 8px;
+  height: 50px !important;
+  line-height: 50px;
+  color: #fff;
+  background-color: #1e88e5;
+
+  & .navbar {
+    flex: 1;
+  }
+}
+
+.layout-main {
+  min-height: 100%;
+  padding: 0;
+  // hack flex 滚动条失效的问题
+  height: auto;
+  background: #fff;
+
+  &__scroll {
+    position: relative;
+    min-height: 100%;
+    overflow: auto;
+  }
+}
+
+.navbar-action-button {
+  font-size: 14px;
+
+  &,
+  &.md-button:focus,
+  &.md-button:hover,
+  & .md-button,
+  & .md-button:focus,
+  & .md-button:hover {
+    color: #fff;
+  }
+}
